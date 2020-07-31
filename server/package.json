@@ -4,9 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
 }
